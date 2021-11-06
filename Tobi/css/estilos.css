@@ -1,0 +1,188 @@
+:root {
+  --color1: rgb(243, 236, 236);
+  --color2: rgb(73, 42, 22);
+  --color3: #3d3436;
+}
+
+body {
+  background-color: var(--color1);
+  margin: 0;
+  padding: 0;
+}
+
+/* Barra de navegacion */
+
+#navigation-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.navigation-bar {
+  background-color: var(--color3);
+  height: 70px;
+  width: 100%;
+  text-align: right;
+}
+
+.navigation-bar img {
+  float: left;
+}
+
+.navigation-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display: inline;
+  vertical-align: top;
+}
+
+.navigation-bar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+@media (max-width: 491px) {
+  .navigation-bar #navegation-container ul li a {
+    font-size: 16px;
+    padding: 0px 1px;
+  }
+}
+
+.navigation-bar li a {
+  color: white;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  opacity: 0.9;
+  padding: 0px 10px;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .navigation-bar #navegation-container ul li a {
+    font-size: 24px;
+    padding: 5px 15px;
+  }
+}
+#menu {
+  float: right;
+}
+/* Foto princiapl */
+.hero {
+  margin-top: 10px;
+  background-image: url(../img/principal.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 40rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 55rem;
+  }
+}
+
+/* Texto */
+.title-p {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-bottom: 0px;
+}
+
+.content {
+  padding: 0 1rem;
+  text-align: justify;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+/* El contenido comienza con esto, se baja de eso, se cambia la fuente */
+@media (min-width: 768px) {
+  .content {
+    padding: 0 8rem;
+  }
+}
+
+/* Fotos color salchicha */
+.sizeDog {
+  background-image: url(../img/perro-salchicha.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 22rem;
+}
+
+.contenedor-salchichas-color {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.listado-salchichas-color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.listado-salchichas-color img {
+  max-width: 100%;
+  height: 19rem;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .listado-salchichas-color {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+  .listado-salchichas-color img {
+    max-width: 100%;
+    height: 26rem;
+  }
+}
+
+/* Fotos pelaje salchicha */
+.contenedor-salchichas-pelaje {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.listado-salchichas-pelaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
+@media (min-width: 1018px) {
+  .listado-salchichas-pelaje {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.ajustaTamanioPelaje img {
+  height: 300px;
+  width: 320px;
+  margin: 0;
+  object-fit: contain;
+}
+
+/* Footer */
+.piePag {
+  background-color: var(--color3);
+  width: 100%;
+  height: 43px;
+  font-size: 30px;
+}
+
+.piePag p {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+}
