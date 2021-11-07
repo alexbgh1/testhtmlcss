@@ -22,24 +22,64 @@
             </div>
         </div>
     </header>
-
-    <div class="wakeup-tobi">
-        <img id="image_boton" onclick= "changeImage()" src="img/galeria/boton.png" width="183" height="50"/>
-        <img id="tobi_sleep" src="img/galeria/tobi-duerme.jpg"/>
-        <script>
-            function changeImage(){
-                var image = document.getElementById("tobi_sleep");
-                if (image.src.match("despierta")){
-                    image.src= "img/galeria/tobi-duerme.jpg";
-                }else {
-                    image.src= "img/galeria/tobi-despierta.jpg"
+    <!-- wakeup two states photo -->
+    <div style="margin-top: 30px;">
+        <div class="wakeup-tobi">
+            <img id="image_boton" onclick= "changeImage()" src="img/galeria/boton.png" width="183" height="50"/>
+            <img id="tobi_sleep" src="img/galeria/tobi-duerme.jpg"/>
+            <script>
+                function changeImage(){
+                    var image = document.getElementById("tobi_sleep");
+                    if (image.src.match("despierta")){
+                        image.src= "img/galeria/tobi-duerme.jpg";
+                    }else {
+                        image.src= "img/galeria/tobi-despierta.jpg"
+                    }
                 }
-            }
-        </script>
+            </script>
+        </div>
     </div>
 
+    <div class="row">
+        <div class="column adjust-column">
+            <img src="img/galeria/tobi_01.jpg" alt="tobi_01"/>
+            <img src="img/galeria/tobi_02.jpg" alt="tobi_02"/>
+            <img src="img/galeria/tobi_03.jpg" alt="tobi_03"/>
+            <img src="img/galeria/tobi_04.jpg" alt="tobi_04"/>
+            <img src="img/galeria/tobi_05.jpg" alt="tobi_05"/>
+        </div>
+        <div class="column">
+            <img src="img/galeria/tobi_06.jpg" alt="tobi_06"/>
+            <img src="img/galeria/tobi_07.jpg" alt="tobi_07"/>
+            <img src="img/galeria/tobi_08.jpg" alt="tobi_08"/>
+            <img src="img/galeria/tobi_09.jpg" alt="tobi_09"/>
+            <img src="img/galeria/tobi_10.jpg" alt="tobi_10"/>
+        </div>
+        <div class="column adjust-column">
+            <img src="img/galeria/tobi_11.jpg" alt="tobi_11"/>
+            <img src="img/galeria/tobi_12.jpg" alt="tobi_12"/>
+            <img src="img/galeria/tobi_13.jpg" alt="tobi_13"/>
+            <img src="img/galeria/tobi_14.jpg" alt="tobi_14"/>
+            <img src="img/galeria/tobi_15.jpg" alt="tobi_15"/>
+        </div>
+        <div class="column">
+            <img src="img/galeria/tobi_16.jpg" alt="tobi_16"/>
+            <img src="img/galeria/tobi_17.jpg" alt="tobi_17"/>
+            <img src="img/galeria/tobi_18.jpg" alt="tobi_18"/>
+            <img src="img/galeria/tobi_19.jpg" alt="tobi_19"/>
+            <img src="img/galeria/tobi_20.jpg" alt="tobi_20"/>
+        </div>
+    </div>
+    
+    <div style="margin-top: 10px;">
+        <div class="last-salchi" style="align-items: center;"></div>
+    </div>
+    
     <footer class= "piePag">
-        a
+        <div>
+            <p>Derechos reservados</p>
+            <p>2021 © Test página salchicha html</p>
+        </div>
     </footer>
     
 </body>
