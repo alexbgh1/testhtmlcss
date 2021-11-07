@@ -4,20 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Galería</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos-galeria.css">
 </head>
 <body>
     <header>
-        <img src="logo" alt="logo-pag" />
-        SalchiTobi
+        <div class="navigation-bar">
+            <div id = "navegation-container">
+                <img src="img/logo.jpg" alt="logo-pag" />
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="soyTobi.html">¿Quién es Tobi?</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
-    <div class = "">
-        <a href="index.html">Inicio</a>
-        <a href="soyTobi.html">¿Quién es Tobi?</a>
-        <a href="galeria.html">Galería</a>
-        <a href="contacto.html">Contacto</a>
+    <div class="wakeup-tobi">
+        <img id="image_boton" onclick= "changeImage()" src="img/galeria/boton.png" width="183" height="50"/>
+        <img id="tobi_sleep" src="img/galeria/tobi-duerme.jpg"/>
+        <script>
+            function changeImage(){
+                var image = document.getElementById("tobi_sleep");
+                if (image.src.match("despierta")){
+                    image.src= "img/galeria/tobi-duerme.jpg";
+                }else {
+                    image.src= "img/galeria/tobi-despierta.jpg"
+                }
+            }
+        </script>
     </div>
 
     <footer class= "piePag">
